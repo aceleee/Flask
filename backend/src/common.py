@@ -9,3 +9,4 @@ class Query:
     def conn(self):
         db = connect('127.0.0.1', "root", "123456", "mettuan", chatset='utf-8')
         return db
+
