@@ -2,6 +2,7 @@
 from common import *
 app.secret_key = '123456'
 
+
 queue = Query()
 db = queue.conn()
 @app.route('/')
