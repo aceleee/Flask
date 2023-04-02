@@ -1,9 +1,11 @@
 #codeing=utf-8
-from common import *
-app.secret_key = '123456'
 
-queue = Query()
-db = queue.conn()
+import openai
+from flask import Flask
+from flask import request
+
+app = Flask()
+
 @app.route('/')
 def first():
     return app.send_static_file("index.html")
